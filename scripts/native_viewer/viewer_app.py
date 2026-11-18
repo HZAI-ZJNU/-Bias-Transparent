@@ -560,7 +560,7 @@ class ViewerApp:
         # Raw IMU. Values stacked under captions like ERROR NOW: right-aligned
         # 3-axis values can hit the panel edge and wrap mid-number (seen live
         # on the accel row).
-        panel.add_child(_section("IMU - raw /gt_box/cpt7", self.COLOR_IMU, em))
+        panel.add_child(_section("IMU - raw bag topic", self.COLOR_IMU, em))
         panel.add_child(_txt("GYRO - RAD/S", MUTED))
         self._stat_imu_gyro = _txt("--")
         panel.add_child(self._stat_imu_gyro)
